@@ -1,0 +1,145 @@
+{
+  "name": "Better Admin Environment",
+  "drush_recipes_api": "1.0",
+  "weight": "0",
+  "core": "7",
+  "recipe": [
+    {
+      "command": "dl",
+      "arguments": [
+        "ctools",
+        "views",
+        "entity",
+        "views_bulk_operations",
+        "admin_views",
+        "module_filter"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "ctools",
+        "views_content",
+        "page_manager",
+        "views",
+        "views_ui",
+        "entity",
+        "entity_token",
+        "views_bulk_operations",
+        "admin_views",
+        "module_filter"
+      ]
+    },
+    {
+      "command": "dl",
+      "arguments": [
+        "autocomplete_deluxe",
+        "backports",
+        "better_exposed_filters",
+        "contextual_flyout_links",
+        "delete_all",
+        "fpa",
+        "fape",
+        "simplified_menu_admin",
+        "views_autocomplete_filters"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "autocomplete_deluxe",
+        "backports",
+        "better_exposed_filters",
+        "contextual_flyout_links",
+        "delete_all",
+        "fpa",
+        "fape",
+        "simplified_menu_admin",
+        "views_autocomplete_filters"
+      ]
+    },
+    {
+      "command": "dl",
+      "arguments": [
+        "chosen"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "chosen"
+      ]
+    },
+    {
+      "command": "chosenplugin"
+    },
+    {
+      "command": "dl",
+      "arguments": [
+        "contextual_flyout_links"
+      ]
+    },
+    {
+      "command": "dis",
+      "arguments": [
+        "toolbar,overlay"
+      ]
+    },
+    {
+      "command": "pm-uninstall",
+      "arguments": [
+        "toolbar,overlay"
+      ]
+    },
+    {
+      "command": "dl",
+      "arguments": [
+        "navbar"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "navbar"
+      ]
+    },
+    {
+      "command": "dl",
+      "arguments": [
+        "adminimal_theme"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "adminimal"
+      ]
+    },
+    {
+      "command": "variable-set",
+      "arguments": [
+        "admin_theme",
+        "adminimal"
+      ]
+    },
+    {
+      "command": "variable-set",
+      "arguments": [
+        "node_admin_theme",
+        "TRUE"
+      ]
+    },
+    {
+      "command": "cc",
+      "arguments": [
+        "all"
+      ]
+    }
+  ],
+  "metadata": {
+    "type": 2,
+    "version": "1.0",
+    "author": "smerth",
+    "description": "Disable undesirable modules in Drupal standard install, download and enable modules and libraries for a better backend admin experience. Dowload, install and set the Adminimal theme to be used as the admin theme."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Install Omega 4 and subtheme",
+  "drush_recipes_api": "1.0",
+  "weight": "0",
+  "core": "7",
+  "recipe": [
+    {
+      "command": "dl",
+      "arguments": [
+        "omega-7.x-4.x"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "omega"
+      ]
+    },
+    {
+      "command": "variable-set",
+      "arguments": [
+        "theme_default",
+        "omega"
+      ]
+    },
+    {
+      "command": "cc",
+      "arguments": [
+        "drush"
+      ]
+    },
+    {
+      "command": "owiz"
+    }
+  ],
+  "metadata": {
+    "type": 2,
+    "version": "1.0",
+    "author": "smerth",
+    "description": "Install Omega 4 theme, create a subtheme using Drush owiz."
+  }
+}

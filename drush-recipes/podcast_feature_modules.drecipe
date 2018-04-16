@@ -1,0 +1,57 @@
+{
+  "name": "Podcast Feature Modules",
+  "drush_recipes_api": "1.0",
+  "weight": "0",
+  "core": "7",
+  "recipe": [
+    {
+      "command": "dl",
+      "arguments": [
+        "views_rss",
+        "views_rss_itunes",
+        "media-7.x-2.x-dev",
+        "media_browser_plus-7.x-3.x-dev",
+        "views_tree-7.x-2.x-dev",
+        "bulk_media_upload",
+        "plupload-7.x-1.x-dev",
+        "mediafront",
+        "file_entity",
+        "flag",
+        "inline_entity_form",
+        "term_reference_tree",
+        "freepager",
+        "getid3",
+        "uuid_features"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "views_rss",
+        "views_rss_itunes",
+        "media",
+        "media_browser_plus",
+        "views_tree",
+        "bulk_media_upload",
+        "media_bulk_upload",
+        "plupload",
+        "multiform",
+        "mediafront",
+        "osmplayer",
+        "file_entity",
+        "flag",
+        "inline_entity_form",
+        "term_reference_tree",
+        "freepager",
+        "getid3",
+        "uuid_features"
+      ]
+    }
+  ],
+  "metadata": {
+    "type": 2,
+    "version": "1.0",
+    "author": "smerth",
+    "description": "Download and install the modules used in my Podcast Feature."
+  }
+}

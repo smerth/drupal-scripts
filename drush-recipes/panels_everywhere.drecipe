@@ -1,0 +1,35 @@
+{
+  "name": "Setup Panels Everywhere",
+  "drush_recipes_api": "1.0",
+  "weight": "0",
+  "core": "7",
+  "recipe": [
+    {
+      "command": "pm-download",
+      "arguments": [
+        "ctools",
+        "panels",
+        "panels_everywhere"
+      ]
+    },
+    {
+      "command": "pm-enable",
+      "arguments": [
+        "ctools",
+        "views_content",
+        "page_manager",
+        "panels",
+        "panels_node",
+        "panels_mini",
+        "panels_ipe",
+        "panels_everywhere"
+      ]
+    }
+  ],
+  "metadata": {
+    "type": 2,
+    "version": "1.0",
+    "author": "smerth",
+    "description": "Set up Panels Everywhere on a Drupal site"
+  }
+}

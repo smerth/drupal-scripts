@@ -1,0 +1,51 @@
+{
+  "name": "Bootstrap 3 Theme and Modules",
+  "drush_recipes_api": "1.0",
+  "weight": "0",
+  "core": "7",
+  "recipe": [
+    {
+      "command": "dl",
+      "arguments": [
+        "bootstrap-7.x-3.x-dev"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "bootstrap"
+      ]
+    },
+    {
+      "command": "variable-set",
+      "arguments": [
+        "theme_default",
+        "bootstrap"
+      ]
+    },
+    {
+      "command": "dl",
+      "arguments": [
+        "bootstrap_carousel_if,bootstrap_fieldgroup,bootstrap_core,bootstrap_library,bootstrap_login_modal,bootstrap_modal_messages,bootstrap_panels,bootstrap_tour,ds_bootstrap_layouts,panels_bootstrap_layouts,panels_bootstrap_styles-7.x-1.x-dev,twitter_bootstrap_modal,views_bootstrap-7.x-3.x-dev"
+      ]
+    },
+    {
+      "command": "en",
+      "arguments": [
+        "bootstrap_carousel_if,bootstrap_fieldgroup,bootstrap_field,bootstrap_modal_messages,bootstrap_tour,bootstrap_ux,panels_bootstrap_layouts,panels_bootstrap_styles,views_bootstrap"
+      ]
+    },
+    {
+      "command": "cc",
+      "arguments": [
+        "all"
+      ]
+    }
+  ],
+  "metadata": {
+    "type": 2,
+    "version": "1.0",
+    "author": "smerth",
+    "description": "Download and install the Bootstrap3 theme and related Bootstrap modules. Enable and set relevant variables"
+  }
+}
